@@ -41,6 +41,9 @@ public class VotingClientTest implements Runnable {
 	private static void promptServices(VotingService server, int input, String n) throws RemoteException {
 		int v;
     	switch (input) {
+//		case 0:
+//			loop = false;
+//			break;
 		case 1:
 			System.err.println("Enviando el voto al servidor...");
 			v = server.vote(n);
